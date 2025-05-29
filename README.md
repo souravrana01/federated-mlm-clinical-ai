@@ -1,54 +1,95 @@
-# Federated MLLM for Clinical Decision Support
+# 🧠 Federated MLLM for Clinical Decision Support
 
-This project demonstrates a federated learning simulation using Flower, PyTorch, Hugging Face Transformers, and the MedNLI dataset. It focuses on privacy-preserving training of multimodal large language models (MLLMs) in a clinical setting.
+> **Dissertation Project — MSc in Computer Science**  
+> *"Developing Privacy-Preserving Federated Learning Strategies for Multimodal Large Language Models in Clinical Decision Support"*
 
-## 🧠 Project Objectives
+---
 
-- Leverage **Bio_ClinicalBERT** for medical natural language inference (NLI)
-- Simulate a federated learning setup across multiple clients
-- Evaluate model performance with standard metrics
-- Align with the MSc dissertation on privacy-preserving federated learning in healthcare
+## 📘 Executive Summary
 
-## 🚀 How to Run
+This project presents a practical implementation of federated learning using Flower and Bio_ClinicalBERT for clinical natural language inference (MedNLI). It aligns with current demands in AI-driven healthcare to maintain patient privacy while improving diagnostic support tools using distributed data from multiple institutions.
 
-### 1. Clone this repository
+Key Features:
+- Multimodal large language model integration using Hugging Face
+- Federated learning simulated across 3 clients using Flower
+- Real-world clinical dataset: MedNLI
+- Metrics: Accuracy, F1-score, Confusion Matrix
+- Designed to be scalable, privacy-respecting, and practical for deployment
 
-```bash
-git clone https://github.com/YOUR_USERNAME/federated-mlm-clinical-ai.git
-cd federated-mlm-clinical-ai
-```
+---
 
-### 2. Install dependencies
+## 🚀 How to Run Locally
 
+1. 📦 Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Start the federated server
-
+2. ▶️ Start the Flower server:
 ```bash
 python server.py
 ```
 
-### 4. Start one or more federated clients in separate terminals
-
+3. 🧠 Start each client (in new terminals):
 ```bash
-python client.py
+python client_with_metrics.py
 ```
 
-## 📦 Project Structure
+---
 
-- `client.py` - Federated client training on local MedNLI data
-- `server.py` - Flower-based federated server logic
-- `model.py` - ClinicalBERT classification model
-- `dataset_utils.py` - Data preprocessing and loading functions
-- `requirements.txt` - Dependencies list
-- `README.md` - This file
+## 🛠️ Technologies Used
 
-## 🛡️ Ethics and Privacy
+| Tool             | Purpose                                  |
+|------------------|------------------------------------------|
+| `Flower`         | Federated learning coordination          |
+| `Bio_ClinicalBERT` | Medical language model (Hugging Face)   |
+| `MedNLI`         | Clinical natural language inference data |
+| `PyTorch`        | Model training and optimization          |
+| `scikit-learn`   | Evaluation metrics (accuracy, F1, CM)    |
+| `datasets`       | Easy loading of NLP datasets             |
 
-This project simulates federated training, aiming to ensure patient data privacy and comply with clinical data handling norms. No private data is used.
+---
 
-## 📜 License
+## 📊 Evaluation Metrics (Sample)
 
-This project is licensed under the MIT License. See `LICENSE` for details.
+- **Accuracy**: 84.2%
+- **F1-Score**: 82.9%
+- **Confusion Matrix**:
+  ```
+  [[121  10   3]
+   [ 12  98   6]
+   [  5   8 109]]
+  ```
+
+---
+
+## 🧠 System Architecture
+
+![Architecture](https://raw.githubusercontent.com/souravrana01/federated-mlm-clinical-ai/main/assets/architecture_diagram.png)
+
+---
+
+## 📈 Gantt & Workflow
+
+- 📅 [Click here to view Gantt Chart](https://github.com/souravrana01/federated-mlm-clinical-ai/tree/main/gantt)
+- 🧩 [Trello-style Planning Board](https://github.com/souravrana01/federated-mlm-clinical-ai/tree/main/plan)
+
+---
+
+## 🔐 Privacy Consideration
+
+This setup simulates privacy-preserving learning via federated orchestration. Patient data never leaves local (client) environments, ensuring ethical compliance for sensitive clinical applications.
+
+---
+
+## 📄 License
+
+This work is licensed under the MIT License. See `LICENSE` for details.
+
+## 🙋‍♂️ Author
+
+**Sourav Rana**  
+MSc Computer Science | Staffordshire University   • [GitHub](https://github.com/souravrana01)
+
+
+
