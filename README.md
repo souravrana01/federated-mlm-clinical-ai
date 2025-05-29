@@ -64,15 +64,13 @@ python client_with_metrics.py
 ---
 
 ## 🧠 System Architecture
-
-![Architecture](https://raw.githubusercontent.com/souravrana01/federated-mlm-clinical-ai/main/assets/architecture_diagram.png)
-
----
+## 🧠 System Architecture
+![Architecture](https://github.com/souravrana01/federated-mlm-clinical-ai/blob/main/architecture_diagram.png?raw=true)
 
 ## 📈 Gantt & Workflow
+- 📅 ![Gantt Chart](https://github.com/souravrana01/federated-mlm-clinical-ai/blob/main/gantt_chart.png?raw=true)
+- 🧩 ![Trello Board](https://github.com/souravrana01/federated-mlm-clinical-ai/blob/main/trello_board.png?raw=true)
 
-- 📅 [Click here to view Gantt Chart](https://github.com/souravrana01/federated-mlm-clinical-ai/tree/main/gantt)
-- 🧩 [Trello-style Planning Board](https://github.com/souravrana01/federated-mlm-clinical-ai/tree/main/plan)
 
 ---
 
