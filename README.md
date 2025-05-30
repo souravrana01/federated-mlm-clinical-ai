@@ -1,18 +1,22 @@
-# Federated Multimodal LLM in Clinical AI
+# Federated Clinical BERT - Day 1 Demo
 
-This project implements a federated learning system using multimodal large language models (MLLMs) for clinical decision support. It focuses on preserving patient privacy while enabling collaborative model training across distributed healthcare environments.
+This is a demonstration of how federated learning works using Flower, PyTorch, and a mock ClinicalBERT structure. It simulates training across 3 clients using fake sentence classification data, useful for understanding federated learning in healthcare AI.
 
-## Key Components
-- Flower framework for federated orchestration
-- ClinicalBERT fine-tuned on MedNLI (natural language inference)
-- Simulated clients to mimic hospital data silos
+## Files
+- `train.py`: Main script to simulate local training and federated averaging.
+- `requirements.txt`: Python libraries needed to run the code.
+- `README.md`: This file.
 
-## Project Structure
-- `code/`: Federated learning training scripts and model code
-- `error_logs/`: Screenshots and logs of errors encountered
-- `daily_summary/`: Text summaries of daily activities
-- `outputs/`: Model checkpoints and evaluation metrics
-- `visuals/`: System architecture diagrams, Gantt chart, etc.
+## Run Instructions
+1. Install requirements:
+```bash
+pip install -r requirements.txt
+```
 
-## Getting Started
-Clone the repository and follow the instructions in the `code/` directory to run the training locally.
+2. Run simulation:
+```bash
+python train.py
+```
+
+## Dataset
+Today's simulation uses fake data to demonstrate working federated logic before applying real medical data (MedNLI / MedQA / etc.).

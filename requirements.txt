@@ -1,1 +1,2 @@
-# Placeholder content for requirements.txt
+torch
+flwr
