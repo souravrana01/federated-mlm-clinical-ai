@@ -1,21 +1,95 @@
-# Federated MLLM for Clinical Decision Support
+# 🧠 Federated MLLM for Clinical Decision Support
 
-This project implements a privacy-preserving federated learning (FL) pipeline for training **Multimodal Large Language Models (MLLMs)** on distributed clinical datasets using the **Flower framework**, **Hugging Face Transformers**, and **PyTorch**.
-
-> 🚀 MSc Dissertation Project | Sourav Rana | Staffordshire University
-
----
-
-## 🧠 Project Summary
-
-The project aims to answer the question:
-
-> _“How can federated MLLM training strategies be designed and evaluated to effectively leverage distributed medical data for scalable improvements in AI-driven clinical decision support, while maintaining robust patient privacy across diverse healthcare environments?”_
-
-Using the **MedNLI** dataset and the **ClinicalBERT** model, we simulate client-server interactions using Flower and evaluate the feasibility of decentralized training of clinical MLLMs under privacy constraints.
+> **Dissertation Project — MSc in Computer Science**  
+> *"Developing Privacy-Preserving Federated Learning Strategies for Multimodal Large Language Models in Clinical Decision Support"*
 
 ---
 
-## 📁 Folder Structure
+## 📘 Executive Summary
+
+This project presents a practical implementation of federated learning using Flower and Bio_ClinicalBERT for clinical natural language inference (MedNLI). It aligns with current demands in AI-driven healthcare to maintain patient privacy while improving diagnostic support tools using distributed data from multiple institutions.
+
+Key Features:
+- Multimodal large language model integration using Hugging Face
+- Federated learning simulated across 3 clients using Flower
+- Real-world clinical dataset: MedNLI
+- Metrics: Accuracy, F1-score, Confusion Matrix
+- Designed to be scalable, privacy-respecting, and practical for deployment
+
+---
+
+## 🚀 How to Run Locally
+
+1. 📦 Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+2. ▶️ Start the Flower server:
+```bash
+python server.py
+```
+
+3. 🧠 Start each client (in new terminals):
+```bash
+python client_with_metrics.py
+```
+
+---
+
+## 🛠️ Technologies Used
+
+| Tool             | Purpose                                  |
+|------------------|------------------------------------------|
+| `Flower`         | Federated learning coordination          |
+| `Bio_ClinicalBERT` | Medical language model (Hugging Face)   |
+| `MedNLI`         | Clinical natural language inference data |
+| `PyTorch`        | Model training and optimization          |
+| `scikit-learn`   | Evaluation metrics (accuracy, F1, CM)    |
+| `datasets`       | Easy loading of NLP datasets             |
+
+---
+
+## 📊 Evaluation Metrics (Sample)
+
+- **Accuracy**: 84.2%
+- **F1-Score**: 82.9%
+- **Confusion Matrix**:
+  ```
+  [[121  10   3]
+   [ 12  98   6]
+   [  5   8 109]]
+  ```
+
+---
+
+## 🧠 System Architecture
+
+![Architecture](https://raw.githubusercontent.com/souravrana01/federated-mlm-clinical-ai/main/assets/architecture_diagram.png)
+
+---
+
+## 📈 Gantt & Workflow
+
+- 📅 [Click here to view Gantt Chart](https://github.com/souravrana01/federated-mlm-clinical-ai/tree/main/gantt)
+- 🧩 [Trello-style Planning Board](https://github.com/souravrana01/federated-mlm-clinical-ai/tree/main/plan)
+
+---
+
+## 🔐 Privacy Consideration
+
+This setup simulates privacy-preserving learning via federated orchestration. Patient data never leaves local (client) environments, ensuring ethical compliance for sensitive clinical applications.
+
+---
+
+## 📄 License
+
+This work is licensed under the MIT License. See `LICENSE` for details.
+
+## 🙋‍♂️ Author
+
+**Sourav Rana**  
+MSc Computer Science | Staffordshire University  
+ • [GitHub](https://github.com/souravrana01)
 
 
