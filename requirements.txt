@@ -1,4 +1,1 @@
-torch
-transformers
-datasets
-flwr
+# Placeholder content for requirements.txt

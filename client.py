@@ -1,1 +1,1 @@
-# Client training logic placeholder
+# Placeholder content for client.py
