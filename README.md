@@ -1,12 +1,18 @@
 
-# Day 3 - Federated MLLM Project
+# Day 4 - Federated Multimodal LLM for Clinical AI
 
-## Objective
-- Evaluate the performance of the global model using `mednli_dev.jsonl` and `mednli_test.jsonl`
-- Visualize training metrics
-- Document evaluation results
+## Folder Structure
+- `data/`: Contains dataset files like `mednli_train.jsonl`
+- `scripts/`: Python scripts for training and evaluation
+- `models/`: Saved model weights after training
+- `logs/`: Training and evaluation logs
+- `notebooks/`: Optional Jupyter notebooks for interactive exploration
 
-## Files
-- `evaluate_model.py`: Script to load test datasets and evaluate global model.
-- `model_metrics.json`: Placeholder for accuracy, loss, and other metrics.
-- `README.md`: Summary of the day's work.
+## Instructions
+1. Upload `mednli_train.jsonl` to `data/` folder.
+2. Run scripts in `scripts/` for training and evaluation.
+3. Store output and checkpoints in `models/` and `logs/`.
+
+---
+
+Generated for MSc Research Project: Privacy-Preserving Federated Learning for Multimodal LLMs in Clinical Decision Support.
