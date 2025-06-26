@@ -1,38 +1,20 @@
-# Federated MLLM for Clinical Decision Support - MPR Practical Repository
+# Federated MLLM for Clinical Decision Support – MPR Professional Repository
 
-This repository contains all practical implementation files for the MSc Midpoint Progress Review (MPR).
+This repository contains professional-grade practical implementation files for the MSc Midpoint Progress Review (MPR) submission.
 
 ## 📁 Folder Structure
 
-- `data/` – Contains cleaned dataset (`mednli_train_clean.jsonl`)
-- `notebooks/` – Daily development notebooks (Colab-compatible)
-- `models/` – Model checkpoints and configurations
-- `scripts/` – Utility scripts for training and evaluation
-- `results/` – Logs, plots, and performance metrics
-- `docs/` – Literature tables, diagrams, and system architecture
+- `data/` – Cleaned datasets (e.g., `mednli_train_clean.jsonl`)
+- `notebooks/` – Colab-compatible FL development notebooks
+- `models/` – Configuration and checkpoint files
+- `scripts/` – Modularized Python scripts for training and evaluation
+- `results/` – Performance logs, charts, and benchmark stats
+- `docs/` – Visual assets (flowcharts, tables, evaluation diagrams)
 
 ## ✅ Summary of Implemented Components
 
-- Federated learning simulation with Flower using BioClinicalBERT
-- Dataset cleaning and tokenization
-- Secure Aggregation and Differential Privacy integration
-- Multimodal support under development
-
-## ⚙️ Environment Requirements
-
-```bash
-pip install transformers datasets torch flower
-```
-
-## 📌 Dataset
-
-Uses a preprocessed version of the MedNLI dataset stored in `data/mednli_train_clean.jsonl`.
-
-## 🔄 To Run
-
-Upload the code notebooks from `notebooks/` to Google Colab or run scripts locally via:
-
-```bash
-python scripts/train_federated.py
-```
+- Federated simulation with Flower
+- Tokenization using BioClinicalBERT from HuggingFace
+- Secure Aggregation & DP integration
+- Training monitoring with TensorBoard
 
