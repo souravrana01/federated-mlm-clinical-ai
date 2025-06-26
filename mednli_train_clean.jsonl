@@ -1,0 +1,3 @@
+{"sentence1": "The patient was prescribed antibiotics for a urinary tract infection.", "sentence2": "The patient is being treated for a bacterial infection.", "gold_label": "entailment"}
+{"sentence1": "The MRI scan showed no abnormalities.", "sentence2": "The patient had a normal MRI result.", "gold_label": "entailment"}
+{"sentence1": "The patient reports a history of asthma.", "sentence2": "The patient denies any respiratory issues.", "gold_label": "contradiction"}

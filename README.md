@@ -1,18 +1,38 @@
-# Day 6 - Federated MLLM for Clinical AI
+# Federated MLLM for Clinical Decision Support - MPR Practical Repository
 
-This folder contains the Day 6 progress on the Federated Multimodal Large Language Model (MLLM) project for clinical decision support.
+This repository contains all practical implementation files for the MSc Midpoint Progress Review (MPR).
 
-## Structure
+## 📁 Folder Structure
 
-- `data/`: contains the `mednli_train_clean.jsonl` dataset (upload manually).
-- `src/day6_federated_training.py`: script to preprocess and tokenize data using Bio_ClinicalBERT.
-- `models/`: to store trained models.
-- `notebooks/`: for Jupyter/Colab notebooks.
-- `logs/`: for training logs.
-- `plots/`: for visualizations.
-- `configs/`: for YAML or JSON configuration files.
+- `data/` – Contains cleaned dataset (`mednli_train_clean.jsonl`)
+- `notebooks/` – Daily development notebooks (Colab-compatible)
+- `models/` – Model checkpoints and configurations
+- `scripts/` – Utility scripts for training and evaluation
+- `results/` – Logs, plots, and performance metrics
+- `docs/` – Literature tables, diagrams, and system architecture
 
-## How to Run
+## ✅ Summary of Implemented Components
 
-1. Upload your cleaned dataset (`mednli_train_clean.jsonl`) to the `data/` folder.
-2. Run the script located in `src/day6_federated_training.py` on Google Colab or locally.
+- Federated learning simulation with Flower using BioClinicalBERT
+- Dataset cleaning and tokenization
+- Secure Aggregation and Differential Privacy integration
+- Multimodal support under development
+
+## ⚙️ Environment Requirements
+
+```bash
+pip install transformers datasets torch flower
+```
+
+## 📌 Dataset
+
+Uses a preprocessed version of the MedNLI dataset stored in `data/mednli_train_clean.jsonl`.
+
+## 🔄 To Run
+
+Upload the code notebooks from `notebooks/` to Google Colab or run scripts locally via:
+
+```bash
+python scripts/train_federated.py
+```
+
