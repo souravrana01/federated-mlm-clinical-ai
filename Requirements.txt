@@ -1,0 +1,9 @@
+How to Run This Code:
+python fl_app.py
+pip show flwr ray
+pip install -U "flwr[simulation]"
+pip install torch opacus "flwr[simulation]" numpy matplotlib
+Install dependencies: pip install streamlit torch opacus flwr matplotlib seaborn pillow numpy
+Save the code to a file, e.g., fl_app.py
+Run: streamlit run fl_app.py
+Open the browser link shown (usually http://localhost:8501)
